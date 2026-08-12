@@ -2823,7 +2823,7 @@ END GROUP
                 0x10000100                        __boot2_end__ = .
                 0x00000001                        ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be exactly 256 bytes in size for RP2040)
 
-.text           0x10000100     0x27d4
+.text           0x10000100     0x27dc
                 0x10000100                        __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
@@ -2888,273 +2888,273 @@ END GROUP
                 0x10000280       0x34 CMakeFiles/pio_dma_test.dir/main.c.o
                 0x10000280                init_out_pins
  .text.startup.main
-                0x100002b4      0x1b8 CMakeFiles/pio_dma_test.dir/main.c.o
+                0x100002b4      0x1c0 CMakeFiles/pio_dma_test.dir/main.c.o
                 0x100002b4                main
  .text.gpio_set_function
-                0x1000046c       0x34 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x1000046c                gpio_set_function
+                0x10000474       0x34 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x10000474                gpio_set_function
  .text.gpio_init
-                0x100004a0       0x40 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
-                0x100004a0                gpio_init
- .text.panic    0x100004e0       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
-                0x100004e0                panic
+                0x100004a8       0x40 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x100004a8                gpio_init
+ .text.panic    0x100004e8       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x100004e8                panic
  .text.hw_claim_lock
-                0x10000510       0x18 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000510                hw_claim_lock
+                0x10000518       0x18 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000518                hw_claim_lock
  .text.hw_claim_unlock
-                0x10000528       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000528                hw_claim_unlock
+                0x10000530       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000530                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x1000053c       0x44 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x1000053c                hw_claim_or_assert
+                0x10000544       0x44 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000544                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x10000580       0x88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
-                0x10000580                hw_claim_unused_from_range
+                0x10000588       0x88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x10000588                hw_claim_unused_from_range
  .text.next_striped_spin_lock_num
-                0x10000608       0x18 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
-                0x10000608                next_striped_spin_lock_num
+                0x10000610       0x18 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x10000610                next_striped_spin_lock_num
  .text.spin_locks_reset
-                0x10000620       0x1c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
-                0x10000620                spin_locks_reset
+                0x10000628       0x1c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x10000628                spin_locks_reset
  .text.runtime_init_per_core_irq_priorities
-                0x1000063c       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000063c                runtime_init_per_core_irq_priorities
+                0x10000644       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000644                runtime_init_per_core_irq_priorities
  .text.irq_set_enabled
-                0x10000660       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000660                irq_set_enabled
+                0x10000668       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x10000668                irq_set_enabled
  .text.irq_is_enabled
-                0x10000684       0x18 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x10000684                irq_is_enabled
+                0x1000068c       0x18 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x1000068c                irq_is_enabled
  .text.irq_set_exclusive_handler
-                0x1000069c       0x54 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x1000069c                irq_set_exclusive_handler
+                0x100006a4       0x54 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100006a4                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x100006f0      0x1d0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100006f0                irq_remove_handler
+                0x100006f8      0x1d0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100006f8                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x100008c0       0xb4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100008c0                irq_add_tail_to_free_list
+                0x100008c8       0xb4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100008c8                irq_add_tail_to_free_list
  .text.lock_init
-                0x10000974       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
-                0x10000974                lock_init
+                0x1000097c       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x1000097c                lock_init
  .text.runtime_init_mutex
-                0x10000984       0x50 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x10000984                runtime_init_mutex
+                0x1000098c       0x50 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x1000098c                runtime_init_mutex
  .text.sleep_until_callback
-                0x100009d4       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100009dc       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.alarm_pool_irq_handler
-                0x10000a04      0x300 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000a0c      0x300 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
  .text.runtime_init_default_alarm_pool
-                0x10000d04       0xdc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000d04                runtime_init_default_alarm_pool
+                0x10000d0c       0xdc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000d0c                runtime_init_default_alarm_pool
  .text.alarm_pool_add_alarm_at_force_in_context
-                0x10000de0       0xb0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000de0                alarm_pool_add_alarm_at_force_in_context
+                0x10000de8       0xb0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000de8                alarm_pool_add_alarm_at_force_in_context
  .text.alarm_pool_cancel_alarm
-                0x10000e90       0x74 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000e90                alarm_pool_cancel_alarm
+                0x10000e98       0x74 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000e98                alarm_pool_cancel_alarm
  .text.sleep_ms
-                0x10000f04       0xfc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10000f04                sleep_ms
+                0x10000f0c       0xfc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10000f0c                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x10001000      0x13c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x10001000                best_effort_wfe_or_timeout
+                0x10001008      0x13c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x10001008                best_effort_wfe_or_timeout
  .text.timer_hardware_alarm_claim
-                0x1000113c       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x1000113c                timer_hardware_alarm_claim
+                0x10001144       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001144                timer_hardware_alarm_claim
  .text.timer_time_us_64
-                0x10001150       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001150                timer_time_us_64
+                0x10001158       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001158                timer_time_us_64
  .text.time_us_64
-                0x10001160       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001160                time_us_64
+                0x10001168       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10001168                time_us_64
  .text.busy_wait_us
-                0x10001174       0x68 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x10001174                busy_wait_us
+                0x1000117c       0x68 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x1000117c                busy_wait_us
  .text.busy_wait_until
-                0x100011dc       0x20 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
-                0x100011dc                busy_wait_until
+                0x100011e4       0x20 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x100011e4                busy_wait_until
  .text.uart_init
-                0x100011fc      0x120 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
-                0x100011fc                uart_init
+                0x10001204      0x120 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x10001204                uart_init
  .text.clock_configure_int_divider
-                0x1000131c       0xf4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x1000131c                clock_configure_int_divider
+                0x10001324       0xf4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001324                clock_configure_int_divider
  .text.clock_configure_undivided
-                0x10001410       0xe8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001410                clock_configure_undivided
+                0x10001418       0xe8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001418                clock_configure_undivided
  .text.clock_get_hz
-                0x100014f8        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x100014f8                clock_get_hz
+                0x10001500        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x10001500                clock_get_hz
  .text.set_sys_clock_pll
-                0x10001504      0x1b8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x10001504                set_sys_clock_pll
+                0x1000150c      0x1b8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x1000150c                set_sys_clock_pll
  .text.check_sys_clock_khz
-                0x100016bc      0x26c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
-                0x100016bc                check_sys_clock_khz
+                0x100016c4      0x26c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x100016c4                check_sys_clock_khz
  .text.pll_init
-                0x10001928       0xa4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
-                0x10001928                pll_init
+                0x10001930       0xa4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x10001930                pll_init
  .text.tick_start
-                0x100019cc       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
-                0x100019cc                tick_start
+                0x100019d4       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x100019d4                tick_start
  .text.rom_func_lookup
-                0x100019dc       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100019dc                rom_func_lookup
+                0x100019e4       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x100019e4                rom_func_lookup
  .text.rom_data_lookup
-                0x100019ec       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100019ec                rom_data_lookup
+                0x100019f4       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x100019f4                rom_data_lookup
  .text.rom_funcs_lookup
-                0x100019fc       0x44 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
-                0x100019fc                rom_funcs_lookup
+                0x10001a04       0x44 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x10001a04                rom_funcs_lookup
  .text.xosc_init
-                0x10001a40       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
-                0x10001a40                xosc_init
+                0x10001a48       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x10001a48                xosc_init
  .text.first_per_core_initializer
-                0x10001a68        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001a70        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .text.hard_assertion_failure
-                0x10001a6c        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001a6c                hard_assertion_failure
+                0x10001a74        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001a74                hard_assertion_failure
  .text.runtime_run_initializers
-                0x10001a78       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001a78                runtime_run_initializers
+                0x10001a80       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001a80                runtime_run_initializers
  .text.runtime_run_per_core_initializers
-                0x10001aa0       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x10001aa0                runtime_run_per_core_initializers
+                0x10001aa8       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10001aa8                runtime_run_per_core_initializers
  .text.runtime_init_early_resets
-                0x10001ac8       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001ac8                runtime_init_early_resets
+                0x10001ad0       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001ad0                runtime_init_early_resets
  .text.runtime_init_usb_power_down
-                0x10001af4       0x1c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001af4                runtime_init_usb_power_down
+                0x10001afc       0x1c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001afc                runtime_init_usb_power_down
  .text.runtime_init_post_clock_resets
-                0x10001b10       0x20 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001b10                runtime_init_post_clock_resets
+                0x10001b18       0x20 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001b18                runtime_init_post_clock_resets
  .text.runtime_init_rp2040_gpio_ie_disable
-                0x10001b30       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001b30                runtime_init_rp2040_gpio_ie_disable
+                0x10001b38       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001b38                runtime_init_rp2040_gpio_ie_disable
  .text.runtime_init_spin_locks_reset
-                0x10001b44        0x8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001b44                runtime_init_spin_locks_reset
+                0x10001b4c        0x8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001b4c                runtime_init_spin_locks_reset
  .text.runtime_init_install_ram_vector_table
-                0x10001b4c       0xb4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10001b4c                runtime_init_install_ram_vector_table
+                0x10001b54       0xb4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10001b54                runtime_init_install_ram_vector_table
  .text.runtime_init_clocks
-                0x10001c00       0xd8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
-                0x10001c00                runtime_init_clocks
- .text          0x10001cd8       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x10001c08       0xd8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x10001c08                runtime_init_clocks
+ .text          0x10001ce0       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .text.__wrap___aeabi_uidiv
-                0x10001ce8       0x4c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
-                0x10001ce8                __wrap___aeabi_uidiv
-                0x10001ce8                __wrap___aeabi_uidivmod
-                0x10001ce8                div_u32u32
-                0x10001ce8                divmod_u32u32
-                0x10001d18                divmod_u32u32_savestate
+                0x10001cf0       0x4c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x10001cf0                __wrap___aeabi_uidiv
+                0x10001cf0                __wrap___aeabi_uidivmod
+                0x10001cf0                div_u32u32
+                0x10001cf0                divmod_u32u32
+                0x10001d20                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x10001d34       0xa4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
-                0x10001d34                __aeabi_double_init
+                0x10001d3c       0xa4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x10001d3c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10001dd8       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
-                0x10001dd8                double_table_shim_on_use_helper
+                0x10001de0       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x10001de0                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x10001e04       0x32 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
-                0x10001e04                __wrap___aeabi_lmul
- *fill*         0x10001e36        0x2 
+                0x10001e0c       0x32 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+                0x10001e0c                __wrap___aeabi_lmul
+ *fill*         0x10001e3e        0x2 
  .text.__aeabi_float_init
-                0x10001e38       0x64 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
-                0x10001e38                __aeabi_float_init
+                0x10001e40       0x64 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x10001e40                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10001e9c       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
-                0x10001e9c                float_table_shim_on_use_helper
- .text          0x10001ec8       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10001ec8                __aeabi_mem_init
- .text.memcpy   0x10001ed8        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
-                0x10001ed8                __wrap___aeabi_memcpy
-                0x10001ed8                __wrap_memcpy
+                0x10001ea4       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x10001ea4                float_table_shim_on_use_helper
+ .text          0x10001ed0       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10001ed0                __aeabi_mem_init
+ .text.memcpy   0x10001ee0        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x10001ee0                __wrap___aeabi_memcpy
+                0x10001ee0                __wrap_memcpy
  .text._out_char
-                0x10001ee4       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001eec       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .text.weak_raw_vprintf
-                0x10001ef4       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
-                0x10001ef4                weak_raw_vprintf
- .text._exit    0x10001f24        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001f24                _exit
- .text._fini    0x10001f28        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001f28                _fini
- .text.exit     0x10001f2c        0x8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001f2c                exit
+                0x10001efc       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x10001efc                weak_raw_vprintf
+ .text._exit    0x10001f2c        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10001f2c                _exit
+ .text._fini    0x10001f30        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10001f30                _fini
+ .text.exit     0x10001f34        0x8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10001f34                exit
  .text.runtime_init
-                0x10001f34       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
-                0x10001f34                runtime_init
+                0x10001f3c       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x10001f3c                runtime_init
  .text.stdio_out_chars_no_crlf
-                0x10001f60       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001f68       0x10 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_out_chars_crlf
-                0x10001f70       0xb0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10001f78       0xb0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .text.stdio_put_string
-                0x10002020       0xfc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002020                stdio_put_string
+                0x10002028       0xfc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002028                stdio_put_string
  .text.stdio_set_driver_enabled
-                0x1000211c       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x1000211c                stdio_set_driver_enabled
+                0x10002124       0x30 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002124                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x1000214c        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x1000214c                stdio_init_all
+                0x10002154        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002154                stdio_init_all
  .text.__wrap_putchar
-                0x10002158       0x94 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x10002158                stdio_putchar
-                0x10002158                __wrap_putchar
+                0x10002160       0x94 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002160                stdio_putchar
+                0x10002160                __wrap_putchar
  .text.__wrap_puts
-                0x100021ec       0x3c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
-                0x100021ec                __wrap_puts
-                0x100021ec                stdio_puts
+                0x100021f4       0x3c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x100021f4                __wrap_puts
+                0x100021f4                stdio_puts
  .text.stdio_uart_out_chars
-                0x10002228       0x4c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10002230       0x4c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .text.stdio_uart_in_chars
-                0x10002274       0x90 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-                0x10002274                stdio_uart_in_chars
+                0x1000227c       0x90 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x1000227c                stdio_uart_in_chars
  .text.on_uart_rx
-                0x10002304       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x1000230c       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .text.stdio_uart_out_flush
-                0x1000232c       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10002334       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .text.stdio_uart_set_chars_available_callback
-                0x10002340       0x84 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10002348       0x84 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .text.stdio_uart_init
-                0x100023c4       0x50 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-                0x100023c4                stdio_uart_init
+                0x100023cc       0x50 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x100023cc                stdio_uart_init
  .text.runtime_init_per_core_tls_setup
-                0x10002414        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
-                0x10002414                runtime_init_per_core_tls_setup
+                0x1000241c        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+                0x1000241c                runtime_init_per_core_tls_setup
  .text.startup.SystemInit
-                0x10002420       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
-                0x10002420                SystemInit
+                0x10002428       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+                0x10002428                SystemInit
  .text.core1_trampoline
-                0x10002434        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x1000243c        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
  .text.core1_wrapper
-                0x10002438        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
-                0x10002438                core1_wrapper
+                0x10002440        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x10002440                core1_wrapper
  .text.multicore_reset_core1
-                0x10002444       0x60 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
-                0x10002444                multicore_reset_core1
+                0x1000244c       0x60 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x1000244c                multicore_reset_core1
  .text.multicore_launch_core1_raw
-                0x100024a4       0x94 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
-                0x100024a4                multicore_launch_core1_raw
+                0x100024ac       0x94 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x100024ac                multicore_launch_core1_raw
  .text.multicore_launch_core1
-                0x10002538       0x58 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
-                0x10002538                multicore_launch_core1
+                0x10002540       0x58 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x10002540                multicore_launch_core1
  .text.pio_claim_unused_sm
-                0x10002590       0x38 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
-                0x10002590                pio_claim_unused_sm
+                0x10002598       0x38 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x10002598                pio_claim_unused_sm
  .text.pio_add_program
-                0x100025c8       0xec CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
-                0x100025c8                pio_add_program
+                0x100025d0       0xec CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x100025d0                pio_add_program
  .text.pio_sm_set_consecutive_pindirs
-                0x100026b4       0xb4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
-                0x100026b4                pio_sm_set_consecutive_pindirs
+                0x100026bc       0xb4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x100026bc                pio_sm_set_consecutive_pindirs
  .text.pio_sm_init
-                0x10002768       0x9c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
-                0x10002768                pio_sm_init
- .text          0x10002804       0x5c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
-                0x10002804                strlen
- .text.__stub   0x10002860       0x30 linker stubs
+                0x10002770       0x9c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x10002770                pio_sm_init
+ .text          0x1000280c       0x5c /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x1000280c                strlen
+ .text.__stub   0x10002868       0x30 linker stubs
  *(.fini)
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
@@ -3166,181 +3166,181 @@ END GROUP
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
-                0x10002890                        . = ALIGN (0x4)
+                0x10002898                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__bothinit_array_start = .)
-                0x10002890                        PROVIDE (__preinit_array_start = .)
+                0x10002898                        PROVIDE (__preinit_array_start = .)
  *(SORT_BY_NAME(.preinit_array.*))
  .preinit_array.00100
-                0x10002890        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002890                __pre_init_runtime_init_early_resets
+                0x10002898        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x10002898                __pre_init_runtime_init_early_resets
  .preinit_array.00101
-                0x10002894        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x10002894                __pre_init_runtime_init_usb_power_down
+                0x1000289c        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x1000289c                __pre_init_runtime_init_usb_power_down
  .preinit_array.00275
-                0x10002898        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x100028a0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .preinit_array.00300
-                0x1000289c        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x100028a4        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .preinit_array.00350
-                0x100028a0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x100028a8        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .preinit_array.00350
-                0x100028a4        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x100028ac        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .preinit_array.00500
-                0x100028a8        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100028a8                __pre_init_runtime_init_clocks
- .preinit_array.00600
-                0x100028ac        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100028ac                __pre_init_runtime_init_post_clock_resets
- .preinit_array.00700
                 0x100028b0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100028b0                __pre_init_runtime_init_rp2040_gpio_ie_disable
- .preinit_array.01000
+                0x100028b0                __pre_init_runtime_init_clocks
+ .preinit_array.00600
                 0x100028b4        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100028b4                __pre_init_runtime_init_spin_locks_reset
- .preinit_array.01100
-                0x100028b8        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
-                0x100028b8                __pre_init_runtime_init_mutex
- .preinit_array.10080
+                0x100028b4                __pre_init_runtime_init_post_clock_resets
+ .preinit_array.00700
+                0x100028b8        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100028b8                __pre_init_runtime_init_rp2040_gpio_ie_disable
+ .preinit_array.01000
                 0x100028bc        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
-                0x100028bc                __pre_init_runtime_init_install_ram_vector_table
+                0x100028bc                __pre_init_runtime_init_spin_locks_reset
+ .preinit_array.01100
+                0x100028c0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x100028c0                __pre_init_runtime_init_mutex
+ .preinit_array.10080
+                0x100028c4        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x100028c4                __pre_init_runtime_init_install_ram_vector_table
  .preinit_array.11000
-                0x100028c0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
-                0x100028c0                __pre_init_runtime_init_default_alarm_pool
+                0x100028c8        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x100028c8                __pre_init_runtime_init_default_alarm_pool
  .preinit_array.YYYYY
-                0x100028c4        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
-                0x100028c4                __pre_init_first_per_core_initializer
+                0x100028cc        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x100028cc                __pre_init_first_per_core_initializer
  .preinit_array.ZZZZZ.01200
-                0x100028c8        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
-                0x100028c8                __pre_init_runtime_init_per_core_irq_priorities
+                0x100028d0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x100028d0                __pre_init_runtime_init_per_core_irq_priorities
  .preinit_array.ZZZZZ.10060
-                0x100028cc        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
-                0x100028cc                __pre_init_runtime_init_per_core_tls_setup
+                0x100028d4        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+                0x100028d4                __pre_init_runtime_init_per_core_tls_setup
  *(.preinit_array)
-                0x100028d0                        PROVIDE (__preinit_array_end = .)
-                0x100028d0                        . = ALIGN (0x4)
-                0x100028d0                        PROVIDE (__init_array_start = .)
+                0x100028d8                        PROVIDE (__preinit_array_end = .)
+                0x100028d8                        . = ALIGN (0x4)
+                0x100028d8                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
- .init_array    0x100028d0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
-                0x100028d4                        PROVIDE (__init_array_end = .)
+ .init_array    0x100028d8        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+                0x100028dc                        PROVIDE (__init_array_end = .)
                 [!provide]                        PROVIDE (__bothinit_array_end = .)
-                0x100028d4                        . = ALIGN (0x4)
+                0x100028dc                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array)
                 [!provide]                        PROVIDE (__fini_array_end = .)
                 [!provide]                        PROVIDE (__dso_handle = 0x0)
  *(.eh_frame*)
-                0x100028d4                        . = ALIGN (0x4)
+                0x100028dc                        . = ALIGN (0x4)
 
-.glue_7         0x100028d4        0x0
- .glue_7        0x100028d4        0x0 linker stubs
+.glue_7         0x100028dc        0x0
+ .glue_7        0x100028dc        0x0 linker stubs
 
-.glue_7t        0x100028d4        0x0
- .glue_7t       0x100028d4        0x0 linker stubs
+.glue_7t        0x100028dc        0x0
+ .glue_7t       0x100028dc        0x0 linker stubs
 
-.vfp11_veneer   0x100028d4        0x0
- .vfp11_veneer  0x100028d4        0x0 linker stubs
+.vfp11_veneer   0x100028dc        0x0
+ .vfp11_veneer  0x100028dc        0x0 linker stubs
 
-.v4_bx          0x100028d4        0x0
- .v4_bx         0x100028d4        0x0 linker stubs
+.v4_bx          0x100028dc        0x0
+ .v4_bx         0x100028dc        0x0 linker stubs
 
-.iplt           0x100028d4        0x0
- .iplt          0x100028d4        0x0 CMakeFiles/pio_dma_test.dir/main.c.o
+.iplt           0x100028dc        0x0
+ .iplt          0x100028dc        0x0 CMakeFiles/pio_dma_test.dir/main.c.o
 
-.rodata         0x100028d4      0x1a0
+.rodata         0x100028dc      0x1a0
  *(EXCLUDE_FILE(*libm.a: *lib*_a-mem*.o *libc.a: *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x100028d4      0x108 CMakeFiles/pio_dma_test.dir/main.c.o
+                0x100028dc      0x108 CMakeFiles/pio_dma_test.dir/main.c.o
                                  0x32 (size before relaxing)
  .rodata.dma_test_pio_program
-                0x100029dc        0x8 CMakeFiles/pio_dma_test.dir/main.c.o
+                0x100029e4        0x8 CMakeFiles/pio_dma_test.dir/main.c.o
  .rodata.dma_test_pio_program_instructions
-                0x100029e4        0x2 CMakeFiles/pio_dma_test.dir/main.c.o
- *fill*         0x100029e6        0x2 
- .rodata        0x100029e8       0x18 CMakeFiles/pio_dma_test.dir/main.c.o
+                0x100029ec        0x2 CMakeFiles/pio_dma_test.dir/main.c.o
+ *fill*         0x100029ee        0x2 
+ .rodata        0x100029f0       0x18 CMakeFiles/pio_dma_test.dir/main.c.o
  .rodata.panic.str1.4
-                0x10002a00       0x11 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x10002a08       0x11 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .rodata.timer_hardware_alarm_claim.str1.4
-                0x10002a00       0x22 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x10002a08       0x22 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .rodata.hard_assertion_failure.str1.4
-                0x10002a00        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x10002a08        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .rodata.str1.4
-                0x10002a00       0x44 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a08       0x44 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_84
-                0x10002a00        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a08        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_78
-                0x10002a0c        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a14        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_54
-                0x10002a18        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a20        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_48
-                0x10002a24        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a2c        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_42
-                0x10002a30        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a38        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_34
-                0x10002a3c        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a44        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.__bi_26
-                0x10002a48        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+                0x10002a50        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  .rodata.crlf_str.0
-                0x10002a54        0x2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x10002a5c        0x2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .rodata.str1.4
-                0x10002a56       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- *fill*         0x10002a56        0x2 
+                0x10002a5e       0x2c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ *fill*         0x10002a5e        0x2 
  .rodata.__bi_45.4
-                0x10002a58        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10002a60        0xc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .rodata.__bi_49.5
-                0x10002a64        0x8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .rodata.__bi_50.6
                 0x10002a6c        0x8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .rodata.__bi_50.6
+                0x10002a74        0x8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .rodata.pio_claim_unused_sm.str1.4
-                0x10002a74       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x10002a7c       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
  *(.srodata*)
-                0x10002a98                        . = ALIGN (0x4)
+                0x10002aa0                        . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10002a98                        . = ALIGN (0x4)
+                0x10002aa0                        . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10002a74                        __exidx_start = .
+                0x10002a7c                        __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10002a74                        __exidx_end = .
-                0x10002a98                        . = ALIGN (0x4)
-                0x10002a74                        __binary_info_start = .
+                0x10002a7c                        __exidx_end = .
+                0x10002aa0                        . = ALIGN (0x4)
+                0x10002a7c                        __binary_info_start = .
 
-.binary_info    0x10002a74       0x28
+.binary_info    0x10002a7c       0x28
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr84
-                0x10002a74        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr78
-                0x10002a78        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr54
                 0x10002a7c        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr48
+ .binary_info.keep.__bi_ptr78
                 0x10002a80        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr42
+ .binary_info.keep.__bi_ptr54
                 0x10002a84        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr34
+ .binary_info.keep.__bi_ptr48
                 0x10002a88        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .binary_info.keep.__bi_ptr26
+ .binary_info.keep.__bi_ptr42
                 0x10002a8c        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr34
+                0x10002a90        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .binary_info.keep.__bi_ptr26
+                0x10002a94        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
  *(.binary_info.*)
  .binary_info.__bi_ptr50
-                0x10002a90        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .binary_info.__bi_ptr49
-                0x10002a94        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .binary_info.__bi_ptr45
                 0x10002a98        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
-                0x10002a9c                        __binary_info_end = .
-                0x10002a9c                        . = ALIGN (0x4)
+ .binary_info.__bi_ptr49
+                0x10002a9c        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .binary_info.__bi_ptr45
+                0x10002aa0        0x4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x10002aa4                        __binary_info_end = .
+                0x10002aa4                        . = ALIGN (0x4)
 
-.xip_ram        0x15000000        0x0 load address 0x10002a9c
+.xip_ram        0x15000000        0x0 load address 0x10002aa4
                 0x15000000                        __xip_ram_start__ = .
                 0x15000000                        . = ALIGN (0x4)
  *(.xip_ram*)
                 0x15000000                        . = ALIGN (0x4)
                 0x15000000                        __xip_ram_end__ = .
-                0x10002a9c                        __xip_ram_source__ = LOADADDR (.xip_ram)
+                0x10002aa4                        __xip_ram_source__ = LOADADDR (.xip_ram)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -3354,7 +3354,7 @@ END GROUP
                 0x200000c0                        . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.data           0x200000c0      0x1d8 load address 0x10002a9c
+.data           0x200000c0      0x1d8 load address 0x10002aa4
                 0x200000c0                        __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -3420,18 +3420,18 @@ END GROUP
  *(.jcr)
                 0x20000298                        . = ALIGN (0x4)
 
-.igot.plt       0x20000298        0x0 load address 0x10002c74
+.igot.plt       0x20000298        0x0 load address 0x10002c7c
  .igot.plt      0x20000298        0x0 CMakeFiles/pio_dma_test.dir/main.c.o
 
-.tdata          0x20000298        0x0 load address 0x10002c74
+.tdata          0x20000298        0x0 load address 0x10002c7c
                 0x20000298                        . = ALIGN (0x4)
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000298                        __tdata_end = .
                 0x20000298                        PROVIDE (__data_end__ = .)
-                0x10002a9c                        __etext = LOADADDR (.data)
+                0x10002aa4                        __etext = LOADADDR (.data)
                 0x20000298                        . = ALIGN (0x4)
 
-.tbss           0x20000298        0x0 load address 0x10002c74
+.tbss           0x20000298        0x0 load address 0x10002c7c
                 0x20000298                        __bss_start__ = .
                 0x20000298                        __tls_base = .
  *(.tbss .tbss.* .gnu.linkonce.tb.*)
@@ -3439,10 +3439,10 @@ END GROUP
                 0x20000298                        . = ALIGN (0x4)
                 0x20000298                        __tls_end = .
 
-.tbss_space     0x20000298        0x0 load address 0x10002c74
+.tbss_space     0x20000298        0x0 load address 0x10002c7c
                 0x20000298                        . = (__bss_start__ + SIZEOF (.tbss))
 
-.bss            0x20000298      0x484 load address 0x10002c74
+.bss            0x20000298      0x484 load address 0x10002c7c
                 0x20000298                        . = ALIGN (0x4)
                 0x20000298                        __tbss_end = .
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.bss*)))
@@ -3506,7 +3506,7 @@ END GROUP
                 [!provide]                        PROVIDE (__tls_size_align = ALIGN (__tls_size, __tls_align))
                 0x00000008                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 0x00000000                        PROVIDE (__tdata_size = SIZEOF (.tdata))
-                0x10002c74                        PROVIDE (__tdata_source = LOADADDR (.tdata))
+                0x10002c7c                        PROVIDE (__tdata_source = LOADADDR (.tdata))
                 0x00000000                        PROVIDE (__tbss_size = SIZEOF (.tbss))
                 [!provide]                        PROVIDE (__tbss_offset = (ADDR (.tbss) - __tls_start))
 
@@ -3520,31 +3520,31 @@ END GROUP
                 0x00000000                        __tls_size_align = DEFINED (__tls_size_align)?__tls_size_align:ALIGN (__tls_size, __tls_align)
                 0x00000008                        __arm32_tls_tcb_offset = DEFINED (__arm32_tls_tcb_offset)?__arm32_tls_tcb_offset:MAX (0x8, __tls_align)
                 0x00000000                        __tdata_size = DEFINED (__tdata_size)?__tdata_size:SIZEOF (.tdata)
-                0x10002c74                        __tdata_source = DEFINED (__tdata_source)?__tdata_source:LOADADDR (.tdata)
+                0x10002c7c                        __tdata_source = DEFINED (__tdata_source)?__tdata_source:LOADADDR (.tdata)
                 0x00000000                        __tbss_size = DEFINED (__tbss_size)?__tbss_size:SIZEOF (.tbss)
                 0x00000000                        __tbss_offset = DEFINED (__tbss_offset)?__tbss_offset:(ADDR (.tbss) - __tls_start)
                 0x00000001                        __tlsX_align = DEFINED (__tlsX_align)?__tlsX_align:(SIZEOF (.tlsX_not_needed_marker) > 0x0)?0x4:__tls_align
                 0x00000000                        __tlsX_size_align = DEFINED (__tlsX_size_align)?__tlsX_size_align:(SIZEOF (.tlsX_not_needed_marker) > 0x0)?0x0:__tls_size_align
 
-.tls0           0x2000071c        0x0 load address 0x10002c74
+.tls0           0x2000071c        0x0 load address 0x10002c7c
                 0x2000071c                        . = ALIGN (__tlsX_align)
                 0x2000071c                        PROVIDE (__tls0_base = .)
                 0x2000071c                        . = (. + __tlsX_size_align)
 
-.tls1           0x2000071c        0x0 load address 0x10002c74
+.tls1           0x2000071c        0x0 load address 0x10002c7c
                 0x2000071c                        . = ALIGN (__tlsX_align)
                 0x2000071c                        PROVIDE (__tls1_base = .)
                 0x2000071c                        . = (. + __tlsX_size_align)
 
 .persistent_data
-                0x2000071c        0x0 load address 0x10002c74
+                0x2000071c        0x0 load address 0x10002c7c
                 0x2000071c                        __persistent_data_start__ = .
  *(.persistent_data*)
                 0x2000071c                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__persistent_data_end__ = .)
 
 .dummy_pre_heap
-                0x2000071c        0x0 load address 0x10002c74
+                0x2000071c        0x0 load address 0x10002c7c
                 0x2000071c                        . = .
 
 .heap           0x2000071c      0x800
@@ -3554,7 +3554,7 @@ END GROUP
  .heap          0x2000071c      0x800 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
                 0x20040000                        __HeapLimit = DEFINED (HEAP_LIMIT)?HEAP_LIMIT:(ORIGIN (RAM) + LENGTH (RAM))
 
-.scratch_x      0x20040000       0xc8 load address 0x10002c74
+.scratch_x      0x20040000       0xc8 load address 0x10002c7c
                 0x20040000                        __scratch_x_start__ = .
  *(.scratch_x.*)
  .scratch_x.rb32_functions
@@ -3565,14 +3565,14 @@ END GROUP
                 0x200400a8       0x20 linker stubs
                 0x200400c8                        . = ALIGN (0x4)
                 0x200400c8                        __scratch_x_end__ = .
-                0x10002c74                        __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x10002c7c                        __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x10002d3c
+.scratch_y      0x20041000        0x0 load address 0x10002d44
                 0x20041000                        __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                        . = ALIGN (0x4)
                 0x20041000                        __scratch_y_end__ = .
-                0x10002d3c                        __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x10002d44                        __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .stack1_dummy   0x200400c8      0x800
  *(.stack1*)
@@ -3585,9 +3585,9 @@ END GROUP
 .rel.dyn        0x20041800        0x0
  .rel.iplt      0x20041800        0x0 CMakeFiles/pio_dma_test.dir/main.c.o
 
-.flash_end      0x10002d3c        0x0
+.flash_end      0x10002d44        0x0
  *(.embedded_end_block*)
-                0x10002d3c                        PROVIDE (__flash_binary_end = .)
+                0x10002d44                        PROVIDE (__flash_binary_end = .)
                 0x20040000                        __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                        __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                        __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -3606,158 +3606,158 @@ END GROUP
 OUTPUT(../bin/pio_dma_test.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x00000000    0x24a3a
- .debug_info    0x00000000     0x25fb CMakeFiles/pio_dma_test.dir/main.c.o
- .debug_info    0x000025fb     0x235c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_info    0x00004957      0x1bf CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_info    0x00004b16      0x986 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_info    0x0000549c      0x440 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_info    0x000058dc      0x237 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_info    0x00005b13     0x22a2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_info    0x00007db5      0x155 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_info    0x00007f0a     0x1baf CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_info    0x00009ab9     0x5042 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_info    0x0000eafb     0x2afb CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_info    0x000115f6     0x1a9e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_info    0x00013094     0x2eca CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_info    0x00015f5e      0x4d9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_info    0x00016437      0x230 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_info    0x00016667      0x654 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_info    0x00016cbb      0x1b8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_info    0x00016e73      0x20e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_info    0x00017081      0x7d2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_info    0x00017853      0x769 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_info    0x00017fbc       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_info    0x00017fdf       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_info    0x00018002       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_info    0x00018025      0x268 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_info    0x0001828d       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_info    0x000182b0       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_info    0x000182d4       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_info    0x000182f7      0x268 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_info    0x0001855f       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_info    0x00018582      0x625 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_info    0x00018ba7       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_info    0x00018bca      0x278 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_info    0x00018e42     0x22da CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_info    0x0001b11c       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_info    0x0001b13f      0xbd0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_info    0x0001bd0f     0x1e03 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_info    0x0001db12     0x1592 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .debug_info    0x0001f0a4      0x49f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
- .debug_info    0x0001f543      0x2a7 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
- .debug_info    0x0001f7ea     0x20ab CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
- .debug_info    0x00021895     0x307e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
- .debug_info    0x00024913       0x3c /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x0002494f       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+.debug_info     0x00000000    0x24a7c
+ .debug_info    0x00000000     0x263d CMakeFiles/pio_dma_test.dir/main.c.o
+ .debug_info    0x0000263d     0x235c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_info    0x00004999      0x1bf CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_info    0x00004b58      0x986 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_info    0x000054de      0x440 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_info    0x0000591e      0x237 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_info    0x00005b55     0x22a2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_info    0x00007df7      0x155 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_info    0x00007f4c     0x1baf CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_info    0x00009afb     0x5042 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_info    0x0000eb3d     0x2afb CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_info    0x00011638     0x1a9e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_info    0x000130d6     0x2eca CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_info    0x00015fa0      0x4d9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_info    0x00016479      0x230 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_info    0x000166a9      0x654 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_info    0x00016cfd      0x1b8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_info    0x00016eb5      0x20e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_info    0x000170c3      0x7d2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_info    0x00017895      0x769 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_info    0x00017ffe       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_info    0x00018021       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_info    0x00018044       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_info    0x00018067      0x268 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_info    0x000182cf       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_info    0x000182f2       0x24 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_info    0x00018316       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_info    0x00018339      0x268 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_info    0x000185a1       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_info    0x000185c4      0x625 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_info    0x00018be9       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_info    0x00018c0c      0x278 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_info    0x00018e84     0x22da CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_info    0x0001b15e       0x23 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_info    0x0001b181      0xbd0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_info    0x0001bd51     0x1e03 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_info    0x0001db54     0x1592 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .debug_info    0x0001f0e6      0x49f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+ .debug_info    0x0001f585      0x2a7 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+ .debug_info    0x0001f82c     0x20ab CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+ .debug_info    0x000218d7     0x307e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+ .debug_info    0x00024955       0x3c /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00024991       0xeb /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
 
-.debug_abbrev   0x00000000     0x6752
- .debug_abbrev  0x00000000      0x520 CMakeFiles/pio_dma_test.dir/main.c.o
- .debug_abbrev  0x00000520      0x4d9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_abbrev  0x000009f9      0x12b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_abbrev  0x00000b24      0x32a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_abbrev  0x00000e4e      0x212 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_abbrev  0x00001060      0x1ae CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_abbrev  0x0000120e      0x5ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_abbrev  0x000017fb       0xee CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_abbrev  0x000018e9      0x454 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_abbrev  0x00001d3d      0x67d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_abbrev  0x000023ba      0x4f3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_abbrev  0x000028ad      0x364 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_abbrev  0x00002c11      0x56e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_abbrev  0x0000317f      0x1d2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_abbrev  0x00003351      0x145 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_abbrev  0x00003496      0x1bc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_abbrev  0x00003652      0x11d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_abbrev  0x0000376f      0x185 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_abbrev  0x000038f4      0x26b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_abbrev  0x00003b5f      0x2af CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_abbrev  0x00003e0e       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_abbrev  0x00003e20       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_abbrev  0x00003e32       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_abbrev  0x00003e44      0x17a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_abbrev  0x00003fbe       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_abbrev  0x00003fd0       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_abbrev  0x00003fe4       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_abbrev  0x00003ff6      0x173 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_abbrev  0x00004169       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_abbrev  0x0000417b      0x211 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_abbrev  0x0000438c       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_abbrev  0x0000439e       0xb9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_abbrev  0x00004457      0x50c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_abbrev  0x00004963       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_abbrev  0x00004975      0x36b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_abbrev  0x00004ce0      0x5d9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_abbrev  0x000052b9      0x494 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .debug_abbrev  0x0000574d      0x2b9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
- .debug_abbrev  0x00005a06      0x107 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
- .debug_abbrev  0x00005b0d      0x651 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
- .debug_abbrev  0x0000615e      0x53e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
- .debug_abbrev  0x0000669c       0x26 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_abbrev  0x000066c2       0x90 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+.debug_abbrev   0x00000000     0x6755
+ .debug_abbrev  0x00000000      0x523 CMakeFiles/pio_dma_test.dir/main.c.o
+ .debug_abbrev  0x00000523      0x4d9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_abbrev  0x000009fc      0x12b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_abbrev  0x00000b27      0x32a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_abbrev  0x00000e51      0x212 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_abbrev  0x00001063      0x1ae CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_abbrev  0x00001211      0x5ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_abbrev  0x000017fe       0xee CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_abbrev  0x000018ec      0x454 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_abbrev  0x00001d40      0x67d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_abbrev  0x000023bd      0x4f3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_abbrev  0x000028b0      0x364 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_abbrev  0x00002c14      0x56e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_abbrev  0x00003182      0x1d2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_abbrev  0x00003354      0x145 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_abbrev  0x00003499      0x1bc CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_abbrev  0x00003655      0x11d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_abbrev  0x00003772      0x185 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_abbrev  0x000038f7      0x26b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_abbrev  0x00003b62      0x2af CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_abbrev  0x00003e11       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_abbrev  0x00003e23       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_abbrev  0x00003e35       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_abbrev  0x00003e47      0x17a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_abbrev  0x00003fc1       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_abbrev  0x00003fd3       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_abbrev  0x00003fe7       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_abbrev  0x00003ff9      0x173 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_abbrev  0x0000416c       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_abbrev  0x0000417e      0x211 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_abbrev  0x0000438f       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_abbrev  0x000043a1       0xb9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_abbrev  0x0000445a      0x50c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_abbrev  0x00004966       0x12 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_abbrev  0x00004978      0x36b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_abbrev  0x00004ce3      0x5d9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_abbrev  0x000052bc      0x494 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .debug_abbrev  0x00005750      0x2b9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+ .debug_abbrev  0x00005a09      0x107 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+ .debug_abbrev  0x00005b10      0x651 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+ .debug_abbrev  0x00006161      0x53e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+ .debug_abbrev  0x0000669f       0x26 /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x000066c5       0x90 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
 
 .debug_loclists
-                0x00000000    0x14980
+                0x00000000    0x1498c
  .debug_loclists
-                0x00000000      0xb0a CMakeFiles/pio_dma_test.dir/main.c.o
+                0x00000000      0xb16 CMakeFiles/pio_dma_test.dir/main.c.o
  .debug_loclists
-                0x00000b0a     0x1b58 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x00000b16     0x1b58 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_loclists
-                0x00002662      0x349 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x0000266e      0x349 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_loclists
-                0x000029ab      0x108 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x000029b7      0x108 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_loclists
-                0x00002ab3       0x7d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x00002abf       0x7d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_loclists
-                0x00002b30     0x12ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x00002b3c     0x12ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_loclists
-                0x00003e1d       0x41 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x00003e29       0x41 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_loclists
-                0x00003e5e      0x87c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x00003e6a      0x87c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_loclists
-                0x000046da     0x28b3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x000046e6     0x28b3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
  .debug_loclists
-                0x00006f8d     0x19f6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x00006f99     0x19f6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_loclists
-                0x00008983      0xc90 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x0000898f      0xc90 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .debug_loclists
-                0x00009613     0x2966 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x0000961f     0x2966 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_loclists
-                0x0000bf79      0x1e0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x0000bf85      0x1e0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_loclists
-                0x0000c159       0x47 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x0000c165       0x47 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_loclists
-                0x0000c1a0      0x351 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x0000c1ac      0x351 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_loclists
-                0x0000c4f1       0x48 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x0000c4fd       0x48 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_loclists
-                0x0000c539       0x7e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x0000c545       0x7e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_loclists
-                0x0000c5b7      0x14f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x0000c5c3      0x14f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_loclists
-                0x0000c706       0x74 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x0000c712       0x74 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_loclists
-                0x0000c77a       0x3d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x0000c786       0x3d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000c7b7       0x59 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x0000c7c3       0x59 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_loclists
-                0x0000c810      0x289 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x0000c81c      0x289 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
  .debug_loclists
-                0x0000ca99     0x355f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x0000caa5     0x355f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_loclists
-                0x0000fff8      0x44e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x00010004      0x44e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_loclists
-                0x00010446      0xf53 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00010452      0xf53 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_loclists
-                0x00011399      0x75b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x000113a5      0x75b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .debug_loclists
-                0x00011af4       0xc0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+                0x00011b00       0xc0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
  .debug_loclists
-                0x00011bb4      0xc6e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x00011bc0      0xc6e CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
  .debug_loclists
-                0x00012822     0x2107 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x0001282e     0x2107 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
  .debug_loclists
-                0x00014929       0x57 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+                0x00014935       0x57 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
 
 .debug_aranges  0x00000000     0x1230
  .debug_aranges
@@ -3848,176 +3848,176 @@ LOAD linker stubs
                 0x00001210       0x20 /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
 
 .debug_rnglists
-                0x00000000     0x37a0
+                0x00000000     0x3794
  .debug_rnglists
-                0x00000000      0x264 CMakeFiles/pio_dma_test.dir/main.c.o
+                0x00000000      0x258 CMakeFiles/pio_dma_test.dir/main.c.o
  .debug_rnglists
-                0x00000264      0x537 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+                0x00000258      0x537 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
  .debug_rnglists
-                0x0000079b       0x19 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+                0x0000078f       0x19 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
  .debug_rnglists
-                0x000007b4       0xb6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+                0x000007a8       0xb6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
  .debug_rnglists
-                0x0000086a       0x58 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+                0x0000085e       0x58 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
  .debug_rnglists
-                0x000008c2       0x3d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+                0x000008b6       0x3d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
  .debug_rnglists
-                0x000008ff      0x36c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+                0x000008f3      0x36c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
  .debug_rnglists
-                0x00000c6b       0x1f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+                0x00000c5f       0x1f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
  .debug_rnglists
-                0x00000c8a      0x1ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+                0x00000c7e      0x1ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
  .debug_rnglists
-                0x00000e77      0x7f7 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+                0x00000e6b      0x7f7 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
  .debug_rnglists
-                0x0000166e      0x2c6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+                0x00001662      0x2c6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
  .debug_rnglists
-                0x00001934      0x259 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+                0x00001928      0x259 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
  .debug_rnglists
-                0x00001b8d      0x5c0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+                0x00001b81      0x5c0 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
  .debug_rnglists
-                0x0000214d       0x5c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+                0x00002141       0x5c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
  .debug_rnglists
-                0x000021a9       0x2b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+                0x0000219d       0x2b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
  .debug_rnglists
-                0x000021d4      0x112 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+                0x000021c8      0x112 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
  .debug_rnglists
-                0x000022e6       0x1f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+                0x000022da       0x1f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
  .debug_rnglists
-                0x00002305       0x3d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+                0x000022f9       0x3d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
  .debug_rnglists
-                0x00002342       0x4a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+                0x00002336       0x4a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
  .debug_rnglists
-                0x0000238c       0x20 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+                0x00002380       0x20 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
  .debug_rnglists
-                0x000023ac       0x43 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+                0x000023a0       0x43 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
  .debug_rnglists
-                0x000023ef       0x38 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+                0x000023e3       0x38 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
  .debug_rnglists
-                0x00002427       0xf9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+                0x0000241b       0xf9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
  .debug_rnglists
-                0x00002520       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+                0x00002514       0x14 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
  .debug_rnglists
-                0x00002534       0x99 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+                0x00002528       0x99 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
  .debug_rnglists
-                0x000025cd       0xe5 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+                0x000025c1       0xe5 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
  .debug_rnglists
-                0x000026b2       0x13 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+                0x000026a6       0x13 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
  .debug_rnglists
-                0x000026c5       0x38 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+                0x000026b9       0x38 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
  .debug_rnglists
-                0x000026fd       0x49 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+                0x000026f1       0x49 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
  .debug_rnglists
-                0x00002746       0x25 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+                0x0000273a       0x25 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
  .debug_rnglists
-                0x0000276b      0x2a2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+                0x0000275f      0x2a2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
  .debug_rnglists
-                0x00002a0d       0x1b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+                0x00002a01       0x1b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
  .debug_rnglists
-                0x00002a28       0x8b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+                0x00002a1c       0x8b CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
  .debug_rnglists
-                0x00002ab3      0x2bb CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+                0x00002aa7      0x2bb CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
  .debug_rnglists
-                0x00002d6e      0x1ce CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+                0x00002d62      0x1ce CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
  .debug_rnglists
-                0x00002f3c       0x6a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+                0x00002f30       0x6a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
  .debug_rnglists
-                0x00002fa6       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+                0x00002f9a       0x28 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
  .debug_rnglists
-                0x00002fce      0x2d7 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+                0x00002fc2      0x2d7 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
  .debug_rnglists
-                0x000032a5      0x4fb CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+                0x00003299      0x4fb CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
 
-.debug_line     0x00000000    0x1a863
- .debug_line    0x00000000      0xf56 CMakeFiles/pio_dma_test.dir/main.c.o
- .debug_line    0x00000f56     0x1a99 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_line    0x000029ef      0x1f2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_line    0x00002be1      0x862 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_line    0x00003443      0x437 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_line    0x0000387a      0x31f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_line    0x00003b99     0x174f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_line    0x000052e8      0x24c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_line    0x00005534     0x12d8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_line    0x0000680c     0x353f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_line    0x00009d4b     0x1cde CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_line    0x0000ba29      0xf27 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_line    0x0000c950     0x2357 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_line    0x0000eca7      0x46d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_line    0x0000f114      0x2a9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_line    0x0000f3bd      0x3d8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_line    0x0000f795      0x2c4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_line    0x0000fa59      0x284 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_line    0x0000fcdd      0x642 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_line    0x0001031f      0x4c2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_line    0x000107e1      0x108 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_line    0x000108e9      0x2ee CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_line    0x00010bd7      0x452 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_line    0x00011029      0x3d8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_line    0x00011401      0x66d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_line    0x00011a6e       0x61 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_line    0x00011acf      0x3d2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_line    0x00011ea1      0x2ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_line    0x0001218e      0x195 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_line    0x00012323      0x40f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_line    0x00012732       0x94 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_line    0x000127c6      0x114 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_line    0x000128da     0x1c08 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_line    0x000144e2       0xa3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_line    0x00014585      0x815 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_line    0x00014d9a     0x13a9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_line    0x00016143      0xd1f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .debug_line    0x00016e62      0x3b3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
- .debug_line    0x00017215      0x23f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
- .debug_line    0x00017454     0x1536 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
- .debug_line    0x0001898a     0x1ce1 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
- .debug_line    0x0001a66b       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0001a6b5      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+.debug_line     0x00000000    0x1a877
+ .debug_line    0x00000000      0xf6a CMakeFiles/pio_dma_test.dir/main.c.o
+ .debug_line    0x00000f6a     0x1a99 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_line    0x00002a03      0x1f2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_line    0x00002bf5      0x862 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_line    0x00003457      0x437 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_line    0x0000388e      0x31f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_line    0x00003bad     0x174f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_line    0x000052fc      0x24c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_line    0x00005548     0x12d8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_line    0x00006820     0x353f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_line    0x00009d5f     0x1cde CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_line    0x0000ba3d      0xf27 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_line    0x0000c964     0x2357 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_line    0x0000ecbb      0x46d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_line    0x0000f128      0x2a9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_line    0x0000f3d1      0x3d8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_line    0x0000f7a9      0x2c4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_line    0x0000fa6d      0x284 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_line    0x0000fcf1      0x642 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_line    0x00010333      0x4c2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_line    0x000107f5      0x108 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_line    0x000108fd      0x2ee CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_line    0x00010beb      0x452 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_line    0x0001103d      0x3d8 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_line    0x00011415      0x66d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_line    0x00011a82       0x61 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_line    0x00011ae3      0x3d2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_line    0x00011eb5      0x2ed CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_line    0x000121a2      0x195 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_line    0x00012337      0x40f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_line    0x00012746       0x94 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_line    0x000127da      0x114 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_line    0x000128ee     0x1c08 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_line    0x000144f6       0xa3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_line    0x00014599      0x815 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_line    0x00014dae     0x13a9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_line    0x00016157      0xd1f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .debug_line    0x00016e76      0x3b3 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+ .debug_line    0x00017229      0x23f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+ .debug_line    0x00017468     0x1536 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+ .debug_line    0x0001899e     0x1ce1 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+ .debug_line    0x0001a67f       0x4a /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0001a6c9      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
 
-.debug_str      0x00000000     0x65ed
- .debug_str     0x00000000     0x65ed CMakeFiles/pio_dma_test.dir/main.c.o
-                               0x1872 (size before relaxing)
- .debug_str     0x000065ed      0xc88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
- .debug_str     0x000065ed      0x1ec CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
- .debug_str     0x000065ed      0x35a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
- .debug_str     0x000065ed      0x303 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
- .debug_str     0x000065ed      0x220 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
- .debug_str     0x000065ed      0xa9c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
- .debug_str     0x000065ed      0x1ec CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
- .debug_str     0x000065ed      0x793 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
- .debug_str     0x000065ed     0x1184 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
- .debug_str     0x000065ed      0x9e4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
- .debug_str     0x000065ed      0xfc2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
- .debug_str     0x000065ed      0xe85 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
- .debug_str     0x000065ed      0x43f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
- .debug_str     0x000065ed      0x262 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
- .debug_str     0x000065ed      0x31c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
- .debug_str     0x000065ed      0x217 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
- .debug_str     0x000065ed      0x272 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
- .debug_str     0x000065ed      0x79a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
- .debug_str     0x000065ed      0x46f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
- .debug_str     0x000065ed       0x7f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
- .debug_str     0x000065ed       0x82 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
- .debug_str     0x000065ed       0x84 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
- .debug_str     0x000065ed      0x293 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
- .debug_str     0x000065ed       0x8a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
- .debug_str     0x000065ed       0x88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
- .debug_str     0x000065ed       0x82 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
- .debug_str     0x000065ed      0x278 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
- .debug_str     0x000065ed       0x88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
- .debug_str     0x000065ed      0x434 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
- .debug_str     0x000065ed       0x7f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
- .debug_str     0x000065ed      0x3bd CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
- .debug_str     0x000065ed      0x4b9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
- .debug_str     0x000065ed       0x73 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
- .debug_str     0x000065ed      0x76d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
- .debug_str     0x000065ed      0xec5 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
- .debug_str     0x000065ed     0x102f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
- .debug_str     0x000065ed      0x34c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
- .debug_str     0x000065ed      0x625 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
- .debug_str     0x000065ed      0xce2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
- .debug_str     0x000065ed     0x10b6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
- .debug_str     0x000065ed       0xbb /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_str     0x000065ed      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
+.debug_str      0x00000000     0x660e
+ .debug_str     0x00000000     0x660e CMakeFiles/pio_dma_test.dir/main.c.o
+                               0x1893 (size before relaxing)
+ .debug_str     0x0000660e      0xc88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.o
+ .debug_str     0x0000660e      0x1ec CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c.o
+ .debug_str     0x0000660e      0x35a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/hardware_claim/claim.c.o
+ .debug_str     0x0000660e      0x303 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.o
+ .debug_str     0x0000660e      0x220 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+ .debug_str     0x0000660e      0xa9c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.o
+ .debug_str     0x0000660e      0x1ec CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/lock_core.c.o
+ .debug_str     0x0000660e      0x793 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_sync/mutex.c.o
+ .debug_str     0x0000660e     0x1184 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/common/pico_time/time.c.o
+ .debug_str     0x0000660e      0x9e4 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.o
+ .debug_str     0x0000660e      0xfc2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.o
+ .debug_str     0x0000660e      0xe85 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.o
+ .debug_str     0x0000660e      0x43f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.o
+ .debug_str     0x0000660e      0x262 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c.o
+ .debug_str     0x0000660e      0x31c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.o
+ .debug_str     0x0000660e      0x217 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.o
+ .debug_str     0x0000660e      0x272 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.o
+ .debug_str     0x0000660e      0x79a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c.o
+ .debug_str     0x0000660e      0x46f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+ .debug_str     0x0000660e       0x7f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+ .debug_str     0x0000660e       0x82 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S.o
+ .debug_str     0x0000660e       0x84 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+ .debug_str     0x0000660e      0x293 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+ .debug_str     0x0000660e       0x8a CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+ .debug_str     0x0000660e       0x88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+ .debug_str     0x0000660e       0x82 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+ .debug_str     0x0000660e      0x278 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+ .debug_str     0x0000660e       0x88 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+ .debug_str     0x0000660e      0x434 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c.o
+ .debug_str     0x0000660e       0x7f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+ .debug_str     0x0000660e      0x3bd CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+ .debug_str     0x0000660e      0x4b9 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.o
+ .debug_str     0x0000660e       0x73 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S.o
+ .debug_str     0x0000660e      0x76d CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+ .debug_str     0x0000660e      0xec5 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.o
+ .debug_str     0x0000660e     0x102f CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+ .debug_str     0x0000660e      0x34c CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c.o
+ .debug_str     0x0000660e      0x625 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/cmsis/stub/CMSIS/Device/RP2040/Source/system_RP2040.c.o
+ .debug_str     0x0000660e      0xce2 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.o
+ .debug_str     0x0000660e     0x10b6 CMakeFiles/pio_dma_test.dir/home/user/src/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.o
+ .debug_str     0x0000660e       0xbb /usr/lib/gcc/arm-none-eabi/14.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x0000660e      0x1ae /usr/lib/gcc/arm-none-eabi/14.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg.a(libc_a-strlen-stub.o)
 
 .comment        0x00000000       0x4c
  .comment       0x00000000       0x4c CMakeFiles/pio_dma_test.dir/main.c.o
