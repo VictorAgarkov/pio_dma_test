@@ -1,0 +1,82 @@
+.program dma_test_pio
+
+//-------------------------------------------------------------------------------------------------
+
+.wrap_target
+	out pins, 1 [4]
+.wrap
+
+
+% c-sdk {
+//__attribute__((noinline, section(".scratch_y.rb32_functions")))
+static void dma_test_pio_program_init(PIO pio, uint sm, uint offset, uint pin) 
+{
+    pio_sm_config cfg = dma_test_pio_program_get_default_config(offset);
+
+	pio_gpio_init(pio, pin);
+	pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
+
+	sm_config_set_out_pins(&cfg, pin, 1); 
+
+	sm_config_set_out_shift(&cfg, false, true, 32); // autopull
+	
+	//sm_config_set_fifo_join(&cfg, PIO_FIFO_JOIN_TX); // join RX fifo to TX
+
+    pio_sm_init(pio, sm, offset, &cfg);  // load program
+    //pio_sm_set_enabled(pio, sm, true);      // start PIO
+}
+%}
+
+//-------------------------------------------------------------------------------------------------
+//  минимальные проверочные куски кода, штоп работало
+//-------------------------------------------------------------------------------------------------
+//	// используем sideset
+//	.side_set 1
+//	
+//	.wrap_target
+//		nop side 1 [3]
+//		nop side 0 [3]
+//	.wrap
+//	
+//	
+//	
+//	% c-sdk {
+//	static inline void dma_test_pio_program_init(PIO pio, uint sm, uint offset, uint pin) 
+//	{
+//		pio_gpio_init(pio, pin);
+//		pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
+//		 
+//	    pio_sm_config cfg = dma_test_pio_program_get_default_config(offset);
+//	    
+//		sm_config_set_sideset_pins(&cfg, pin);  // side-set pin
+//	    
+//	    pio_sm_init(pio, sm, offset, &cfg);  // load program
+//	    pio_sm_set_enabled(pio, sm, true);      // start PIO
+//	}
+//	%}
+//	
+//	//-------------------------------------------------------------------------------------------------
+//	
+//	// используем "обычные" выводы
+//	.wrap_target
+//		set pins, 1 [5]
+//		set pins, 0 [5]
+//	.wrap
+//	
+//	
+//	% c-sdk {
+//	static inline void dma_test_pio_program_init(PIO pio, uint sm, uint offset, uint pin) 
+//	{
+//		pio_gpio_init(pio, pin);
+//		pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
+//		 
+//	    pio_sm_config cfg = dma_test_pio_program_get_default_config(offset);
+//	    
+//		sm_config_set_set_pins(&cfg, pin, 1);  // set pin
+//	    
+//	    pio_sm_init(pio, sm, offset, &cfg);  // load program
+//	    pio_sm_set_enabled(pio, sm, true);      // start PIO
+//	}
+//	%}
+//	
+//-------------------------------------------------------------------------------------------------
