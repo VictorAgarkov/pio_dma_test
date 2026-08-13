@@ -1,4 +1,4 @@
-This project demonstrate strange behavior of RP2040 DMA with PIO.
+This project demonstrate (not) strange behavior of RP2040 DMA with PIO.
 
 [Discussion on raspberrypi.com forum.](https://forums.raspberrypi.com/viewtopic.php?p=2385377)
 
@@ -11,5 +11,7 @@ At startup, when DMA + PIO are initiated, the TXOVER flag in the FIFO is set sev
 I detect this moment programmatically and output 1 to one of the GPIO pins; this is the yellow trace on the oscilloscope. In this project, this only happens once at startup, but in another project, similar behavior is observed when USB is active.
 
 
-
 ![Oscilloscope](./img/rp2040_PIO_TXOVER.png)
+
+PS: this problen solved, thanx to [gmx](https://forums.raspberrypi.com/viewtopic.php?p=2385456#p2385431). But this means that I have not yet been able to replicate the TXOVER error of another project. 
+Perhaps I can do this.. So far, repeated FLASH reads over XIP do not result in TXOVER FIFO DMA errors.

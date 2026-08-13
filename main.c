@@ -17,7 +17,7 @@
 
 PIO dma_pio = pio0;
 
-volatile uint32_t dma_buff[32];
+volatile uint32_t dma_buff[32]  __attribute__((aligned(32)));
 volatile int g_core1_rdy = 0;
 
 #ifndef ARRAYSIZE
@@ -96,7 +96,8 @@ void core1_routine(void)
 	{	
 		sio_hw->gpio_togl = (1 << DBGPIN2);		// toggle pin - core 1 running		
 		uint32_t fdb = dma_pio->fdebug;
-		gpio_put(DBGPIN5, fdb == 0x00010000);  // set pin, if TXOVER0 raised
+		//gpio_put(DBGPIN5, fdb == 0x00010000);  // set pin, if TXOVER0 raised
+		gpio_put(DBGPIN5, fdb != 0);  // set pin, if some bit in FDEBUG rized
 		if(fdb) 
 		{			
 			dma_pio->fdebug = fdb; // reset errors
@@ -106,7 +107,7 @@ void core1_routine(void)
 //------------------------------------------------------------------------------------------------------------------------------------------------
 int main(void)
 {
-	set_sys_clock_khz(100000, true);
+	set_sys_clock_khz(192000, true);
 	stdio_init_all();
 	
 	init_out_pins((int[]){LEDPIN, DBGPIN1, DBGPIN2, DBGPIN3, DBGPIN4, DBGPIN5}, 6);
@@ -127,22 +128,29 @@ int main(void)
 	uint offset = pio_add_program(dma_pio, &dma_test_pio_program);
 	uint sm = pio_claim_unused_sm(dma_pio, true);
 	dma_test_pio_program_init    (dma_pio, sm, offset, DBGPIN3);
-	pio_sm_set_enabled(dma_pio, sm, true);     // start PIO
 	
 	// init DMA for PIO	
 	setup_DMA_tx(dma_pio, sm, 0, 1, ARRAYSIZE(dma_buff) / 2);
 	setup_DMA_tx(dma_pio, sm, 1, 0, ARRAYSIZE(dma_buff) / 2);
-	dma_start_channel_mask(1 | 2);             // start both DMA
+	//dma_start_channel_mask(1 | 2);  // start both  DMA - WRONG!!!
+	dma_start_channel_mask(1);        // start first DMA - OK
 
 	sio_hw->gpio_set = (1 << LEDPIN);
+	pio_sm_set_enabled(dma_pio, sm, true);     // start PIO
 	
 	for(;;)
 	{
-		
+		sio_hw->gpio_togl = (1 << LEDPIN);
 		volatile uint32_t sum = 0;
+		uint32_t *base32 = (uint32_t*)XIP_MAIN_BASE; // XIP_MAIN_BASE, XIP_NOALLOC_BASE, XIP_NOCACHE_BASE и XIP_NOCACHE_NOALLOC_BASE
+//		uint8_t  *base8  = (uint8_t*)XIP_MAIN_BASE; // XIP_MAIN_BASE, XIP_NOALLOC_BASE, XIP_NOCACHE_BASE и XIP_NOCACHE_NOALLOC_BASE
+		for(int i = 0; i < 0x00400000; i++)
 		{
+//			//sum += base8[i];
+			sum += base32[i];
 			sio_hw->gpio_togl = (1 << DBGPIN1); // toggle oin - core 0 running
 		}
+		
 	}	
 }
 //------------------------------------------------------------------------------------------------------------------------------------------------
