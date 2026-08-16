@@ -5,6 +5,9 @@ include(${PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
 set(PROJECT_NAME "pio_dma_test")
 
+set(CHERRYUSB_DIR "./CherryUSB")
+
+
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/bin")
 
 project(${PROJECT_NAME} C CXX ASM)
@@ -12,19 +15,27 @@ project(${PROJECT_NAME} C CXX ASM)
 pico_sdk_init()
 
 add_executable(${PROJECT_NAME}
-	main.c
+	src/main.c
+	src/get_sine_approx_1025_0_q1.c
+	src/audio_v2_mic_speaker_multichan_template.c
 
+	${CHERRYUSB_DIR}/core/usbd_core.c                 
+	${CHERRYUSB_DIR}/class/audio/usbd_audio.c         
+	${CHERRYUSB_DIR}/port/rp2040/usb_dc_rp2040.c    
 )
 
 target_include_directories(${PROJECT_NAME} PRIVATE
-	${CMAKE_CURRENT_SOURCE_DIR}
+	${CHERRYUSB_DIR}/core
+	${CHERRYUSB_DIR}/common
+	${CHERRYUSB_DIR}/class/audio	
+	${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES 
 	OUTPUT_NAME "../bin/${PROJECT_NAME}"
 )
 
-pico_generate_pio_header(${PROJECT_NAME} ${CMAKE_CURRENT_LIST_DIR}/dma_test.pio)
+pico_generate_pio_header(${PROJECT_NAME} ${CMAKE_CURRENT_LIST_DIR}/src/dma_test.pio)
 
 # Линковка с Pico SDK
 target_link_libraries(${PROJECT_NAME} 

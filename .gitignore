@@ -4,6 +4,7 @@ build
 cmake-*
 *.1
 *.2
+*.*-
 
 .DS_Store
 
