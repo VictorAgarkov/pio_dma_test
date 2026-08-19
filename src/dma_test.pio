@@ -1,9 +1,9 @@
-.program dma_test_pio
 
 //-------------------------------------------------------------------------------------------------
+.program dma_test_pio
 
 .wrap_target
-	out pins, 1 [4]
+	out pins, 1 [3]
 .wrap
 
 
@@ -20,10 +20,12 @@ static void dma_test_pio_program_init(PIO pio, uint sm, uint offset, uint pin)
 
 	sm_config_set_out_shift(&cfg, false, true, 32); // autopull
 	
-	//sm_config_set_fifo_join(&cfg, PIO_FIFO_JOIN_TX); // join RX fifo to TX
+	sm_config_set_fifo_join(&cfg, PIO_FIFO_JOIN_TX); // join RX fifo to TX
 
     pio_sm_init(pio, sm, offset, &cfg);  // load program
     //pio_sm_set_enabled(pio, sm, true);      // start PIO
 }
 %}
+
+
 

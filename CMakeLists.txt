@@ -16,7 +16,6 @@ pico_sdk_init()
 
 add_executable(${PROJECT_NAME}
 	src/main.c
-	src/get_sine_approx_1025_0_q1.c
 	src/audio_v2_mic_speaker_multichan_template.c
 
 	${CHERRYUSB_DIR}/core/usbd_core.c                 
